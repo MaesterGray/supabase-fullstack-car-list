@@ -30,7 +30,6 @@
 	"type": "module",
 	"dependencies": {
 		"@supabase/ssr": "^0.3.0",
-		"@supabase/supabase-js": "^2.43.5",
-		"svelte-french-toast": "^1.2.0"
+		"@supabase/supabase-js": "^2.43.5"
 	}
 }
