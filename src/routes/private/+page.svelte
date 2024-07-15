@@ -1,26 +1,9 @@
 <script lang="ts">
     import Editcar from "$lib/components/Editcar.svelte";
     import Carform from "$lib/components/Carform.svelte";
-    import toast from "svelte-french-toast";
-    let {data,form} = $props()
+    let {data} = $props()
     
-    if(form?.message){
-        let message = form.message
-        let type = form.type
-        if(type === 'addition'){
-            if (message==='failure') {
-                toast.error('Error adding car, try again later')
-            }else{
-                toast.success('Car added succesfully')  
-            }
-        }else if(type ==='deletion'){
-            if (message==='failure') {
-                toast.error('Error deleting car, try again later')
-            }else{
-                toast.success('Car deleted succesfully')  
-            }
-        }
-    }
+   
 </script>
 <div class="min-h-screen bg-gray-900 text-gray-300">
     <div class="container mx-auto p-6 sm:p-12">
